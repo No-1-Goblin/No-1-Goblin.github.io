@@ -1,3 +1,12 @@
 body {
-    background-color: midnightblue;
+    background-color: #222222;
+}
+
+a, a:visited {
+    color: mediumblue;
+    font-size: 20px;
+}
+
+h1, h2, h3 {
+    color: white;
 }
