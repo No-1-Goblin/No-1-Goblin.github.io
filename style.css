@@ -1,11 +1,19 @@
+:root {
+    --bg-color: #f4f4f4; /* Light mode background */
+    --text-color: #333; /* Light mode text color */
+    --link-color: blue;
+    --hover-link-color: #ffcc00;
+    --project-bg: white;
+    --carousel-bg: #000;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    font-size: 16px; /* Consistent typography */
-    line-height: 1.6;
-    scroll-behavior: smooth; /* Smooth scrolling */
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    scroll-behavior: smooth; /* Enables smooth scrolling */
 }
 
 header {
@@ -13,9 +21,9 @@ header {
     color: white;
     padding: 10px 0;
     text-align: center;
-    position: sticky; /* Sticky header */
+    position: sticky;
     top: 0;
-    z-index: 1000;
+    z-index: 10;
 }
 
 nav a {
@@ -23,17 +31,18 @@ nav a {
     margin: 0 15px;
     text-decoration: none;
     font-size: 1.2em;
+    transition: color 0.3s ease; /* Smooth color change on hover */
 }
 
     nav a:hover {
-        text-decoration: underline; /* Hover effect for navigation links */
+        color: var(--hover-link-color); /* Highlight color on hover */
     }
 
 section {
     padding: 20px;
     max-width: 1000px;
     margin: 0 auto;
-    scroll-margin-top: 150px; /* Adjust for sticky header height */
+    scroll-margin-top: 150px; /* Keeps sections from being hidden under the sticky header */
 }
 
 h1 {
@@ -41,12 +50,12 @@ h1 {
 }
 
 .project a, .project a:visited {
-    color: #0073e6; /* Improved contrast */
+    color: var(--link-color);
     text-align: center;
 }
 
 .project {
-    background-color: white;
+    background-color: var(--project-bg);
     padding: 20px;
     margin: 20px 0;
     border-radius: 8px;
@@ -54,28 +63,97 @@ h1 {
     color: #333;
     text-decoration: none;
     text-align: center;
-    transition: all 0.3s ease; /* Smooth transition for hover effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
     .project:hover {
-        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Hover effect for project cards */
-        transform: translateY(-5px);
+        transform: scale(1.05); /* Slight zoom effect on hover */
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
     }
 
-    .project img {
-        width: 100%;
-        height: 400px; /* Set a fixed height */
-        object-fit: cover; /* Ensures the image fills the container while maintaining aspect ratio */
-        border-radius: 8px;
+.carousel {
+    position: relative;
+    overflow: hidden;
+    max-width: 100%;
+    height: 400px;
+    margin: 20px auto;
+    background-color: var(--carousel-bg);
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+    height: 100%;
+}
+
+    .carousel-track img,
+    .carousel-track video {
+        min-width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 
-@media (max-width: 768px) {
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1.5em;
+    z-index: 1;
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-color: #121212;
+        --text-color: #e0e0e0;
+        --link-color: #1e90ff;
+        --hover-link-color: #ffcc00;
+        --project-bg: #333;
+        --carousel-bg: #222;
+    }
+
+    body {
+        background-color: var(--bg-color);
+        color: var(--text-color);
+    }
+
     nav a {
-        display: block;
-        margin: 10px 0;
+        color: white;
     }
 
-    .project img {
-        height: auto; /* Adjust for smaller screens */
+        nav a:hover {
+            color: var(--hover-link-color);
+        }
+
+    .project {
+        background-color: var(--project-bg);
+        color: var(--text-color);
     }
+
+    .carousel {
+        background-color: var(--carousel-bg);
+    }
+
+    .carousel-btn {
+        background-color: rgba(255, 255, 255, 0.5); /* Lighter background for dark mode */
+        color: black;
+    }
+}
+
+i {
+    font-size: 1.5em;
+    margin-right: 10px;
 }

@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Harry Ingham's Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Add Font Awesome CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
+
 <body>
 
     <header>
@@ -28,8 +31,19 @@
         <div class="project">
             <a href="https://beeguy.itch.io/vanishing-act" target="_blank">
                 <h3>Vanishing Act - September 2024</h3>
-                <img src="images/Vanishing Act Logo.png" alt="Vanishing Act Logo">
             </a>
+            <div class="carousel">
+                <div class="carousel-track">
+                    <img src="images/Vanishing_Act_1.png" alt="Screenshot 1 of Vanishing Act">
+                    <img src="images/Vanishing_Act_2.gif" alt="GIF of Vanishing Act gameplay">
+                    <video controls>
+                        <source src="videos/Vanishing_Act_Trailer.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <button class="carousel-btn prev-btn">&lt;</button>
+                <button class="carousel-btn next-btn">&gt;</button>
+            </div>
             <p>
                 A project made by myself and a few friends for the AGDS Freshers Jam. Playing as a witch stuck in your mansion as it's being raided by a demonic entity, gather the ingredients to perform a ritual to escape. My main contributions to this project were programming the player controller, the interaction system, and logic for progressing the ritual.
             </p>
@@ -38,25 +52,83 @@
         <div class="project">
             <a href="https://squid-kid-studios.itch.io/operation-exodus" target="_blank">
                 <h3>Operation Exodus - May 2024</h3>
-                <img src="images/Operation Exodus Logo.png" alt="Operation Exodus Logo">
             </a>
-            <p>A collaborative team project between myself and fellow students for the DES310 module. Set on an overrun spaceship, Operation Exodus is a 2D top-down shooter created in the Unity Engine. My main contributions for this project were programming the mechanics for the player controller, weapon systems, the shop and upgrade systems, lootable crates, and item pickups.</p>
+            <div class="carousel">
+                <div class="carousel-track">
+                    <img src="images/Operation_Exodus_1.png" alt="Screenshot 1 of Operation Exodus">
+                    <img src="images/Operation_Exodus_2.gif" alt="GIF of Operation Exodus gameplay">
+                    <video controls>
+                        <source src="videos/Operation_Exodus_Trailer.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <button class="carousel-btn prev-btn">&lt;</button>
+                <button class="carousel-btn next-btn">&gt;</button>
+            </div>
+            <p>
+                A collaborative team project between myself and fellow students for the DES310 module. Set on an overrun spaceship, Operation Exodus is a 2D top-down shooter created in the Unity Engine. My main contributions for this project were programming the mechanics for the player controller, weapon systems, the shop and upgrade systems, lootable crates, and item pickups.
+            </p>
         </div>
 
         <div class="project">
             <a href="https://fraxle.itch.io/station-sentinels" target="_blank">
                 <h3>Station Sentinels - May 2023</h3>
-                <img src="images/Station Sentinels Logo.png" alt="Station Sentinels Logo">
             </a>
-            <p>A group project between myself and a friend for the CMP 208 module. Set on the space station of an evil robot army, you must travel through each level of the station, eliminating all hostiles on your way to the central server. This game was created using Abertay University's Games Educational Framework (GEF). My main contributions to this project were the weapon and projectile systems, the pickups, arcade mode, bug fixing of the procedural generation system, and optimisation of the model loading systems.</p>
+            <div class="carousel">
+                <div class="carousel-track">
+                    <img src="images/Station_Sentinels_1.png" alt="Screenshot 1 of Station Sentinels">
+                    <img src="images/Station_Sentinels_2.gif" alt="GIF of Station Sentinels gameplay">
+                    <video controls>
+                        <source src="videos/Station_Sentinels_Trailer.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <button class="carousel-btn prev-btn">&lt;</button>
+                <button class="carousel-btn next-btn">&gt;</button>
+            </div>
+            <p>
+                A group project between myself and a friend for the CMP 208 module. Set on the space station of an evil robot army, you must travel through each level of the station, eliminating all hostiles on your way to the central server. This game was created using Abertay University's Games Educational Framework (GEF). My main contributions to this project were the weapon and projectile systems, the pickups, arcade mode, bug fixing of the procedural generation system, and optimisation of the model ...
+            </p>
         </div>
-
     </section>
 
     <section id="contact">
         <h2>Contact</h2>
-        <p>Email: harry.ingham@live.co.uk</p>
+        <p>
+            <i class="fas fa-envelope"></i>
+            Email: <a href="mailto:harry.ingham@live.co.uk">harry.ingham@live.co.uk</a>
+        </p>
+        <p>
+            <i class="fab fa-linkedin"></i>
+            LinkedIn: <a href="https://www.linkedin.com/in/harry-ingham-65a84932b/" target="_blank">Connect with me on LinkedIn</a>
+        </p>
     </section>
+
+    <script>
+        document.querySelectorAll('.carousel').forEach(carousel => {
+            const track = carousel.querySelector('.carousel-track');
+            const prevButton = carousel.querySelector('.prev-btn');
+            const nextButton = carousel.querySelector('.next-btn');
+            const items = Array.from(track.children);
+
+            let currentIndex = 0;
+
+            const updateCarousel = () => {
+                const offset = -currentIndex * 100;
+                track.style.transform = `translateX(${offset}%)`;
+            };
+
+            nextButton.addEventListener('click', () => {
+                currentIndex = (currentIndex + 1) % items.length;
+                updateCarousel();
+            });
+
+            prevButton.addEventListener('click', () => {
+                currentIndex = (currentIndex - 1 + items.length) % items.length;
+                updateCarousel();
+            });
+        });
+    </script>
 
 </body>
 </html>
