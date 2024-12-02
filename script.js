@@ -20,15 +20,22 @@ document.querySelectorAll('.carousel').forEach(carousel => {
         const offset = -currentIndex * 100;  // Move to the appropriate slide
         track.style.transform = `translateX(${offset}%)`;
 
-        // Pause all videos and play the active one
+        // Pause all videos and reset their time, only play the active video
         videos.forEach((video, index) => {
-            if (index === currentIndex) {
+            if (index === currentIndex && video.tagName.toLowerCase() === 'video') {
                 video.play();  // Play the active video
             } else {
                 video.pause();  // Pause all other videos
                 video.currentTime = 0;  // Reset the time so that it starts from the beginning
             }
         });
+
+        // Ensure that no video is playing when on an image
+        const activeItem = items[currentIndex];
+        if (!activeItem.querySelector('video')) {
+            // If the active item doesn't contain a video, pause all videos
+            videos.forEach(video => video.pause());
+        }
     };
 
     nextButton.addEventListener('click', () => {
