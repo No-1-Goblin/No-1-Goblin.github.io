@@ -26,6 +26,7 @@ document.querySelectorAll('.carousel').forEach(carousel => {
                 video.play();  // Play the active video
             } else {
                 video.pause();  // Pause all other videos
+                video.currentTime = 0;  // Reset the time so that it starts from the beginning
             }
         });
     };
