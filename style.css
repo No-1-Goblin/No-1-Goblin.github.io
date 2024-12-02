@@ -134,12 +134,14 @@ h1 {
 
 @media (max-width: 768px) {
     header {
-        font-size: 1.5em; /* Reduce font size */
-        padding: 10px 0; /* Adjust padding to make it more compact */
+        font-size: 1.25em; /* Adjusted header size */
+        padding: 15px 0;
     }
 
     nav a {
-        font-size: 1em; /* Smaller font size for navigation links */
+        font-size: 1em;
+        display: block;
+        margin: 10px 0;
     }
 
     .project {
@@ -150,12 +152,24 @@ h1 {
         height: 300px;
     }
 
-    h1 {
-        font-size: 1.25em; /* Adjust font size for smaller screens */
+    .carousel-btn {
+        font-size: 1.5em; /* Adjust button size */
+        padding: 8px 12px; /* Adjust padding for smaller buttons */
     }
 
-    section {
-        padding: 15px;
+    .prev-btn,
+    .next-btn {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    /* Center the buttons horizontally on mobile */
+    .prev-btn {
+        left: 15px; /* Adjust the left position */
+    }
+
+    .next-btn {
+        right: 15px; /* Adjust the right position */
     }
 }
 
