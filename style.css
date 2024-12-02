@@ -157,6 +157,13 @@ h1 {
     section {
         padding: 15px;
     }
+
+    .project p {
+        padding: 10px;
+        margin: 0;
+        font-size: 1em;
+    }
+
 }
 
 section i {
