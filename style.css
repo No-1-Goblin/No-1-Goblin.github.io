@@ -66,6 +66,7 @@ h1 {
     overflow: hidden;
     max-width: 100%;
     height: 600px; /* Adjust this as needed */
+
     margin: 20px auto;
 }
 
@@ -85,9 +86,9 @@ h1 {
         margin: 0 auto; /* Center the content horizontally */
     }
 
-    /* Center vertically within the carousel */
     .carousel-track img,
     .carousel-track video {
+        /* Center vertically within the carousel */
         display: flex;
         justify-content: center;
         align-items: center;
@@ -132,14 +133,23 @@ h1 {
     outline: none;
 }
 
+section i {
+    margin-right: 10px;
+    color: #333;
+    font-size: 1.2em;
+}
+
+/* Combined mobile rules */
 @media (max-width: 768px) {
     header {
-        font-size: 1.5em; /* Reduce font size */
-        padding: 10px 0; /* Adjust padding to make it more compact */
+        font-size: 1.25em;
+        padding: 15px 0;
     }
 
     nav a {
-        font-size: 1em; /* Smaller font size for navigation links */
+        font-size: 1em;
+        display: block;
+        margin: 10px 0;
     }
 
     .project {
@@ -150,24 +160,27 @@ h1 {
         height: 300px;
     }
 
-    h1 {
-        font-size: 1.25em; /* Adjust font size for smaller screens */
+    .carousel-btn {
+        font-size: 1.5em; /* Smaller carousel buttons on mobile */
     }
 
-    section {
-        padding: 15px;
-    }
-
+    /* Ensure full text visibility for descriptions */
     .project p {
+        white-space: normal; /* Allow text to wrap to the next line */
+        word-wrap: break-word; /* Prevent words from breaking off the screen */
+        overflow: visible; /* Ensure text doesn't get hidden */
+        font-size: 1em;
         padding: 10px;
         margin: 0;
-        font-size: 1em;
+        text-overflow: unset; /* Ensure text is not truncated */
+        display: block; /* Force text to be displayed as block-level element */
     }
 
-}
-
-section i {
-    margin-right: 10px;
-    color: #333;
-    font-size: 1.2em;
+    /* Add the fixes for cutting off on PC and mobile */
+    .project p {
+        line-height: 1.5; /* Add line height to allow text to spread more freely */
+        max-height: none; /* Ensure no max-height is limiting text visibility */
+        height: auto; /* Ensure the height of the paragraph is flexible */
+        width: 100%; /* Allow the paragraph to use the full width */
+    }
 }
