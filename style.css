@@ -25,7 +25,7 @@ nav a {
 }
 
     nav a:hover {
-        color: #ffcc00;
+        color: #ff9900; /* Improved contrast for better visibility */
     }
 
 section {
