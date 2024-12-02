@@ -34,9 +34,9 @@
             </a>
             <div class="carousel">
                 <div class="carousel-track">
-                    <img src="images/Vanishing_Act_1.png" alt="Screenshot 1 of Vanishing Act">
+                    <img src="images/Vanishing_Act_1.png" alt="Screenshot 1 of Vanishing Act" class="active">
                     <img src="images/Vanishing_Act_2.gif" alt="GIF of Vanishing Act gameplay">
-                    <video controls>
+                    <video controls class="active">
                         <source src="videos/Vanishing_Act_Trailer.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
@@ -55,9 +55,9 @@
             </a>
             <div class="carousel">
                 <div class="carousel-track">
-                    <img src="images/Operation_Exodus_1.png" alt="Screenshot 1 of Operation Exodus">
+                    <img src="images/Operation_Exodus_1.png" alt="Screenshot 1 of Operation Exodus" class="active">
                     <img src="images/Operation_Exodus_2.gif" alt="GIF of Operation Exodus gameplay">
-                    <video controls>
+                    <video controls class="active">
                         <source src="videos/Operation_Exodus_Trailer.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
@@ -76,9 +76,9 @@
             </a>
             <div class="carousel">
                 <div class="carousel-track">
-                    <img src="images/Station_Sentinels_1.png" alt="Screenshot 1 of Station Sentinels">
+                    <img src="images/Station_Sentinels_1.png" alt="Screenshot 1 of Station Sentinels" class="active">
                     <img src="images/Station_Sentinels_2.gif" alt="GIF of Station Sentinels gameplay">
-                    <video controls>
+                    <video controls class="active">
                         <source src="videos/Station_Sentinels_Trailer.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
@@ -104,31 +104,7 @@
         </p>
     </section>
 
-    <script>
-        document.querySelectorAll('.carousel').forEach(carousel => {
-            const track = carousel.querySelector('.carousel-track');
-            const prevButton = carousel.querySelector('.prev-btn');
-            const nextButton = carousel.querySelector('.next-btn');
-            const items = Array.from(track.children);
-
-            let currentIndex = 0;
-
-            const updateCarousel = () => {
-                const offset = -currentIndex * 100;
-                track.style.transform = `translateX(${offset}%)`;
-            };
-
-            nextButton.addEventListener('click', () => {
-                currentIndex = (currentIndex + 1) % items.length;
-                updateCarousel();
-            });
-
-            prevButton.addEventListener('click', () => {
-                currentIndex = (currentIndex - 1 + items.length) % items.length;
-                updateCarousel();
-            });
-        });
-    </script>
+    <script src="script.js"></script>
 
 </body>
 </html>
