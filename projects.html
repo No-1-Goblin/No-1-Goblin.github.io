@@ -3,15 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Harry Ingham's Portfolio</title>
+    <title>All Projects</title>
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="js/carousel.js" defer></script>
 </head>
-
 <body>
-
     <header>
-        <h1>Harry Ingham's Portfolio</h1>
+        <h1>All Projects</h1>
         <nav>
             <a href="index.html#home">Home</a>
             <a href="projects.html">All Projects</a>
@@ -19,14 +17,46 @@
         </nav>
     </header>
 
-    <section id="home">
-        <h1>Welcome!</h1>
-        <p>Hi, I&apos;m Harry Ingham, a Computer Game Applications Development student at Abertay University. Here&apos;s a showcase of my game projects.</p>
-    </section>
+    <section>
 
-    <section id="projects">
-        <h2>Featured Projects</h2>
+        <!-- Fishyphus -->
+        <div class="project">
+            <h3>Fishyphus - November 2024</h3>
+            <div class="carousel">
+                <div class="carousel-track">
+                    <img src="images/Fishyphus_1.png" alt="Screenshot 1 of Fishyphus" class="active">
+                    <img src="images/Fishyphus_2.png" alt="Screenshot 2 of Fishyphus" class="active">
+                    <img src="images/Fishyphus_3.png" alt="Screenshot 3 of Fishyphus" class="active">
+                    <img src="images/Fishyphus_4.gif" alt="GIF of Fishyphus gameplay">
+                </div>
+                <button class="carousel-btn prev-btn">&lt;</button>
+                <button class="carousel-btn next-btn">&gt;</button>
+            </div>
+            <p>
+                A small game made by myself and a few friends for the 2 day long AGDS Halloween Jam 2024 made in the Unreal 5 Engine. Playing as the witch from Vanishing Act, and having successfully escaped the feds to your lakeside retreat, you are now on an eternal fishing holiday. My main contributions to this project were the bobbing of the fishing bobber, and the logic for when the player can catch a fish.
+            </p>
+        </div>
 
+        <!-- Vanishing Act -->
+        <div class="project">
+            <h3>Vanishing Act - September 2024</h3>
+            <div class="carousel">
+                <div class="carousel-track">
+                    <img src="images/Vanishing_Act_1.png" alt="Screenshot 1 of Vanishing Act" class="active">
+                    <img src="images/Vanishing_Act_2.png" alt="Screenshot 2 of Vanishing Act" class="active">
+                    <img src="images/Vanishing_Act_3.png" alt="Screenshot 3 of Vanishing Act" class="active">
+                    <img src="images/Vanishing_Act_4.png" alt="Screenshot 4 of Vanishing Act" class="active">
+                    <img src="images/Vanishing_Act_5.gif" alt="GIF of Vanishing Act gameplay">
+                </div>
+                <button class="carousel-btn prev-btn">&lt;</button>
+                <button class="carousel-btn next-btn">&gt;</button>
+            </div>
+            <p>
+                A project made by myself and a few friends for the AGDS Freshers Jam 2024 made in the Unreal 5 Engine. Playing as a witch stuck in your mansion as it's being raided by a demonic entity, gather the ingredients to perform a ritual to escape. My main contributions to this project were programming the player controller, the interaction system, and logic for progressing the ritual.
+            </p>
+        </div>
+
+        <!-- Operation Exodus -->
         <div class="project">
             <h3>Operation Exodus - May 2024</h3>
             <div class="carousel">
@@ -50,24 +80,7 @@
             </p>
         </div>
 
-        <div class="project">
-            <h3>Vanishing Act - September 2024</h3>
-            <div class="carousel">
-                <div class="carousel-track">
-                    <img src="images/Vanishing_Act_1.png" alt="Screenshot 1 of Vanishing Act" class="active">
-                    <img src="images/Vanishing_Act_2.png" alt="Screenshot 2 of Vanishing Act" class="active">
-                    <img src="images/Vanishing_Act_3.png" alt="Screenshot 3 of Vanishing Act" class="active">
-                    <img src="images/Vanishing_Act_4.png" alt="Screenshot 4 of Vanishing Act" class="active">
-                    <img src="images/Vanishing_Act_5.gif" alt="GIF of Vanishing Act gameplay">
-                </div>
-                <button class="carousel-btn prev-btn">&lt;</button>
-                <button class="carousel-btn next-btn">&gt;</button>
-            </div>
-            <p>
-                A project made by myself and a few friends for the AGDS Freshers Jam 2024 made in the Unreal 5 Engine. Playing as a witch stuck in your mansion as it's being raided by a demonic entity, gather the ingredients to perform a ritual to escape. My main contributions to this project were programming the player controller, the interaction system, and logic for progressing the ritual.
-            </p>
-        </div>
-
+        <!-- Station Sentinels -->
         <div class="project">
             <h3>Station Sentinels - May 2023</h3>
             <div class="carousel">
@@ -86,20 +99,5 @@
             </p>
         </div>
     </section>
-
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>
-            <i class="fas fa-envelope"></i>
-            <a href="mailto:harry.ingham@live.co.uk">harry.ingham@live.co.uk</a>
-        </p>
-        <p>
-            <i class="fab fa-linkedin"></i>
-            <a href="https://www.linkedin.com/in/harry-ingham-65a84932b/" target="_blank">Connect with me on LinkedIn</a>
-        </p>
-    </section>
-
-    <script src="js/script.js"></script>
-
 </body>
 </html>
