@@ -2,77 +2,77 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://no1gobl.in/projects/operation_exodus/</loc>
+    <loc>http://localhost:1313/projects/operation_exodus/</loc>
     <lastmod>2024-04-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://no1gobl.in/projects/f_around_and_find_your_way_out/</loc>
+    <loc>http://localhost:1313/projects/f_around_and_find_your_way_out/</loc>
     <lastmod>2025-03-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://no1gobl.in/projects/vanishing_act/</loc>
+    <loc>http://localhost:1313/projects/vanishing_act/</loc>
     <lastmod>2024-09-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://no1gobl.in/projects/station_sentinels/</loc>
+    <loc>http://localhost:1313/projects/station_sentinels/</loc>
     <lastmod>2023-05-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://no1gobl.in/projects/masqueraid/</loc>
+    <loc>http://localhost:1313/projects/masqueraid/</loc>
     <lastmod>2026-02-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://no1gobl.in/projects/fishyphus/</loc>
+    <loc>http://localhost:1313/projects/fishyphus/</loc>
     <lastmod>2024-11-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://no1gobl.in/projects/bubble_bunny_bout/</loc>
+    <loc>http://localhost:1313/projects/bubble_bunny_bout/</loc>
     <lastmod>2025-02-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://no1gobl.in/projects/</loc>
+    <loc>http://localhost:1313/projects/</loc>
     <lastmod>2026-02-13T18:43:26+00:00</lastmod>
   </url><url>
-    <loc>https://no1gobl.in/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2026-02-13T18:43:26+00:00</lastmod>
   </url><url>
-    <loc>https://no1gobl.in/tags/c%23/</loc>
+    <loc>http://localhost:1313/tags/c%23/</loc>
     <lastmod>2026-02-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://no1gobl.in/tags/game/</loc>
+    <loc>http://localhost:1313/tags/game/</loc>
     <lastmod>2026-02-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://no1gobl.in/tags/game-jam/</loc>
+    <loc>http://localhost:1313/tags/game-jam/</loc>
     <lastmod>2026-02-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://no1gobl.in/tags/</loc>
+    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2026-02-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://no1gobl.in/tags/unity/</loc>
+    <loc>http://localhost:1313/tags/unity/</loc>
     <lastmod>2026-02-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://no1gobl.in/tags/c&#43;&#43;/</loc>
+    <loc>http://localhost:1313/tags/c&#43;&#43;/</loc>
     <lastmod>2025-03-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://no1gobl.in/tags/nintendo-ds/</loc>
+    <loc>http://localhost:1313/tags/nintendo-ds/</loc>
     <lastmod>2025-03-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://no1gobl.in/tags/unreal-engine/</loc>
+    <loc>http://localhost:1313/tags/unreal-engine/</loc>
     <lastmod>2025-03-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://no1gobl.in/tags/vr/</loc>
+    <loc>http://localhost:1313/tags/vr/</loc>
     <lastmod>2025-03-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://no1gobl.in/tags/qa--testing/</loc>
+    <loc>http://localhost:1313/tags/qa--testing/</loc>
     <lastmod>2024-04-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://no1gobl.in/tags/ui/</loc>
+    <loc>http://localhost:1313/tags/ui/</loc>
     <lastmod>2024-04-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://no1gobl.in/tags/xbox-one/</loc>
+    <loc>http://localhost:1313/tags/xbox-one/</loc>
     <lastmod>2024-04-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://no1gobl.in/tags/box2d/</loc>
+    <loc>http://localhost:1313/tags/box2d/</loc>
     <lastmod>2023-05-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://no1gobl.in/tags/procedural-generation/</loc>
+    <loc>http://localhost:1313/tags/procedural-generation/</loc>
     <lastmod>2023-05-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://no1gobl.in/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
   </url><url>
-    <loc>https://no1gobl.in/projects_by_tag/</loc>
+    <loc>http://localhost:1313/projects_by_tag/</loc>
   </url>
 </urlset>
